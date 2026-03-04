@@ -1,132 +1,96 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Loubna Semlali | Backend Developer</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f6f9;
-            color: #333;
-        }
+<meta charset="UTF-8">
+<title>Loubna Semlali | Backend Developer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:#f5f5f7;color:#333;}
+    a{text-decoration:none;color:#3498db;}
 
-        header {
-            background-color: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 40px 20px;
-        }
+    /* Header */
+    header{background:linear-gradient(135deg,#6a11cb,#2575fc);color:white;text-align:center;padding:60px 20px;}
+    header h1{font-size:40px;margin-bottom:10px;}
+    header p{font-size:18px;}
+    .profile-img{width:150px;height:150px;border-radius:50%;border:4px solid white;margin-top:20px;object-fit:cover;}
 
-        header h1 {
-            margin: 0;
-            font-size: 32px;
-        }
+    /* Sections */
+    section{max-width:1000px;margin:auto;padding:60px 20px;}
+    section h2{font-size:28px;color:#2575fc;margin-bottom:20px;border-bottom:2px solid #2575fc;display:inline-block;padding-bottom:5px;}
 
-        header p {
-            margin-top: 10px;
-            font-size: 18px;
-        }
+    /* Skills */
+    .skills span{display:inline-block;background:#3498db;color:white;padding:8px 15px;margin:5px;border-radius:8px;font-size:14px;}
 
-        section {
-            padding: 40px 20px;
-            max-width: 900px;
-            margin: auto;
-        }
+    /* Projects */
+    .project{background:white;padding:25px;margin-top:25px;border-radius:12px;box-shadow:0 5px 15px rgba(0,0,0,0.1);transition: transform 0.3s;}
+    .project:hover{transform: translateY(-5px);}
+    .project h3{color:#6a11cb;margin-bottom:10px;}
+    .download-btn{display:inline-block;padding:10px 20px;margin-top:10px;background:#6a11cb;color:white;border-radius:8px;transition:0.3s;}
+    .download-btn:hover{background:#2575fc;}
 
-        h2 {
-            color: #2c3e50;
-            border-bottom: 2px solid #2c3e50;
-            padding-bottom: 10px;
-        }
+    /* Contact */
+    .contact p{margin:10px 0;}
 
-        .skills span {
-            display: inline-block;
-            background-color: #3498db;
-            color: white;
-            padding: 8px 12px;
-            margin: 5px;
-            border-radius: 5px;
-            font-size: 14px;
-        }
-
-        .project {
-            background-color: white;
-            padding: 20px;
-            margin-top: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #2c3e50;
-            color: white;
-        }
-
-        a {
-            color: #3498db;
-            text-decoration: none;
-        }
-    </style>
+    /* Footer */
+    footer{text-align:center;padding:25px;background:#2575fc;color:white;font-size:14px;}
+</style>
 </head>
-
 <body>
 
 <header>
-    <h1>Loubna Semlali</h1>
-    <p>Backend Developer | Bac+2 en Développement Informatique</p>
+<h1>Loubna Semlali</h1>
+<p>Backend Developer | Bac+2 en Développement Informatique</p>
+<img src="https://via.placeholder.com/150" alt="Loubna" class="profile-img">
 </header>
 
 <section>
-    <h2>À propos de moi</h2>
-    <p>
-        Développeuse web passionnée par le backend et la conception d'applications sécurisées.
-        Je maîtrise PHP, MySQL et l’architecture MVC.
-        Je suis actuellement à la recherche d’un stage pour mettre en pratique mes compétences.
-    </p>
+<h2>À propos de moi</h2>
+<p>Je suis à la recherche d’un stage en développement backend pour mettre en pratique mes compétences et contribuer à des projets concrets. Passionnée par PHP, MySQL et l’architecture MVC.</p>
 </section>
 
 <section>
-    <h2>Compétences</h2>
-    <div class="skills">
-        <span>PHP</span>
-        <span>MySQL</span>
-        <span>Architecture MVC</span>
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>Git & GitHub</span>
-    </div>
+<h2>Compétences</h2>
+<div class="skills">
+<span>PHP</span>
+<span>MySQL</span>
+<span>Architecture MVC</span>
+<span>HTML</span>
+<span>CSS</span>
+<span>JavaScript</span>
+<span>Git & GitHub</span>
+<span>Form Security</span>
+<span>Session Management</span>
+</div>
 </section>
 
 <section>
-    <h2>Projets</h2>
-
-    <div class="project">
-        <h3>Application Web PHP MVC</h3>
-        <p>
-            Développement d’une application web avec système CRUD,
-            authentification des utilisateurs et connexion à une base de données MySQL.
-        </p>
-        <p><a href="#">Voir le projet sur GitHub</a></p>
-    </div>
-
+<h2>Projets</h2>
+<div class="project">
+<h3>Application Web PHP MVC</h3>
+<p>Développement d’une application web simulant un système de gestion avec CRUD, authentification des utilisateurs et connexion à une base de données MySQL. (Projet académique – Bac+2)</p>
+<a href="#" class="download-btn">Télécharger le projet</a>
+</div>
+<div class="project">
+<h3>Système de Gestion de Stagiaires</h3>
+<p>Application PHP pour gérer les stagiaires, avec interface sécurisée et reporting. (Projet académique – Bac+2)</p>
+<a href="#" class="download-btn">Télécharger le projet</a>
+</div>
 </section>
 
 <section>
-    <h2>Contact</h2>
-    <p>Email : semlaliloubna65@gmail.com</p>
-    <p>Téléphone : +212658519775</p>
-    <p>LinkedIn : <a href="">https://linkedin.com/in/loubna-semlali</a></p>
+<h2>Contact</h2>
+<div class="contact">
+<p>Email : semlaliloubna65@gmail.com</p>
+<p>Téléphone : +212658519775</p>
+<p>LinkedIn : <a href="#">🔗 linkedin.com/in/loubna-semlali</a></p>
+<a href="#" class="download-btn">Télécharger mon CV</a>
+</div>
 </section>
 
 <footer>
-    © 2026 Loubna Semlali - Backend Developer
+© 2026 Loubna Semlali - Backend Developer
 </footer>
-<!-- redeploy -->
+
 </body>
 </html>
